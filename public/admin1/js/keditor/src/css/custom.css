@@ -1,0 +1,7 @@
+.editor-page .keditor-header{background: #f1f1f1;padding: 15px;}
+.editor-page .keditor-header a, .editor-page .keditor-header form{margin-right:10px;}
+.editor-page .keditor-header select{display:inline-block;width: 250px;height: 34px;margin-right: 10px;}
+.editor-page .alert{display:inline-block;margin-bottom: 0;padding: 6px 10px;}
+.keditor-content-area{padding-top:30px;}
+#medias-modal .modal-dialog{width:95%;}
+#medias-modal iframe{width:100%;border:none;}
