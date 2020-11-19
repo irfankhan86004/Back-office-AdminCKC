@@ -14,7 +14,7 @@ class AddForeignKeysToBlogTagLangTable extends Migration
     public function up()
     {
         Schema::table('blog_tag', function (Blueprint $table) {
-            $table->foreign('id_tag', 'tag_ibfk_1')->references('id')->on('tags')->onUpdate('CASCADE')->onDelete('CASCADE');
+            $table->foreign('id_tag', 'tags_ibfk_1')->references('id')->on('tags')->onUpdate('CASCADE')->onDelete('CASCADE');
             $table->foreign('id_blog', 'blog_posts_ibfk_1')->references('id')->on('blog_posts')->onUpdate('CASCADE')->onDelete('CASCADE');
         });
     }
@@ -27,7 +27,7 @@ class AddForeignKeysToBlogTagLangTable extends Migration
     public function down()
     {
         Schema::table('blog_tag_lang', function (Blueprint $table) {
-            $table->dropForeign('tag_ibfk_1');
+            $table->dropForeign(tags_ibfk_1);
             $table->dropForeign('blog_posts_ibfk_1');
         });
     }
